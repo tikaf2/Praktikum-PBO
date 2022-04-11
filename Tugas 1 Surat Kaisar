@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        String kalimat = input.nextLine();
+        int pergeseran = input.nextInt();
+        int banyakKata = kalimat.length();
+        System.out.println(pergeseranAlfabet(kalimat, pergeseran, banyakKata));
+    }
+
+    public static String pergeseranAlfabet(String kalimat, int pergeseran, int banyakKata) {
+        String output = "";
+        int i = 0;
+        while (i < banyakKata) {
+
+            int x = kalimat.charAt(i);
+
+            if (x == 32) {
+                output = output + " ";
+            } else if (x >= 65 && x <= 90) {
+                x = x + pergeseran;
+                if (x > 90) {
+                    x -= 26;
+                    output = output + (char) x;
+                } else {
+                    output = output + (char) x;
+                }
+            } else if (x >= 97 && x <= 122) {
+                x = x + pergeseran;
+                if (x > 122) {
+                    x -= 26;
+                    output = output + (char) x;
+                } else {
+                    output = output + (char) x;
+                }
+            }
+            i++;
+        }
+        return output;
+
+    }
+}
