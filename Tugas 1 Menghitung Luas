@@ -1,0 +1,59 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    private static Scanner input = new Scanner(System.in);
+    private static byte luas;
+
+    public static void main(String[] args) {
+        byte menu = input.nextByte();
+        switch (menu) {
+            case 1:
+                luasPersegi();
+                break;
+            case 2:
+                luasSegitiga();
+                break;
+            case 3:
+                byte jari = input.nextByte();
+                lingkaran(jari);
+                break;
+            default:
+                System.out.println("Input yang anda masukan tidak sesuai");
+                break;
+        }
+
+    }
+
+    static void output(byte in1) {
+        System.out.println(luas);
+    }
+
+    static void luasPersegi() {
+        byte sisi = input.nextByte();
+        luas = (byte) (sisi * sisi);
+        output(luas);
+    }
+
+    static void luasSegitiga() {
+        byte alas = input.nextByte();
+        byte tinggi = input.nextByte();
+        luas = (byte) (alas * tinggi / 2);
+        output(luas);
+    }
+
+    static void lingkaran(byte jari) {
+        if (jari == 7) {
+            double rumus = 22 / 7 * jari * jari;
+            int luas = (int) rumus;
+
+            System.out.print((double) luas);
+        } else {
+            double rumus = 3.14 * jari * jari;
+            int luas = (int) rumus;
+
+            System.out.print((double) luas);
+        }
+    }
+}
