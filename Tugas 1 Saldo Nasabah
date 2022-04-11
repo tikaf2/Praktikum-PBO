@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    private static Scanner input = new Scanner(System.in);
+    private static double saldoAkhir;
+
+    public static void main(String[] args) {
+        double setoran = input.nextDouble();
+        double saldo = input.nextDouble();
+        saldobank(setoran, saldo);
+    }
+
+    public static void saldobank(double setoran, double saldo) {
+        double saldo1 = ((setoran + saldo) - 7000);
+        double bonus = (saldo1 * 5) / 10000;
+        saldoAkhir = saldo1 + bonus;
+        output(saldoAkhir);
+    }
+
+    public static void output(double in1) {
+        System.out.println(saldoAkhir);
+    }
+}
