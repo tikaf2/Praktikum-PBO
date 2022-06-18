@@ -1,0 +1,35 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("\n========== DATA MANUSIA BIASA ==========");
+        manusia man1 = new manusia("Aku", "3923842934", true, true);
+        System.out.println(man1.toString());
+        manusia man2 = new manusia("Mentari Tika Fortherina", "1206016702030001", false, false);
+        System.out.println(man2.toString());
+        manusia man3 = new manusia("Kendall Jenner", "123456789", false, true);
+        System.out.println(man3.toString());
+        System.out.println("\n========== DATA MAHASISWA ==========");
+        mahasiswaFilkom mhs1 = new mahasiswaFilkom("I Putu Yoga", "351923848239", false, false, "205150601111018", 3.7);
+        System.out.println(mhs1.toString());
+        mahasiswaFilkom mhs2 = new mahasiswaFilkom("Ayu Priska Ningrum", "1206014607010001", false, false, "195150407111056", 3.2);
+        System.out.println(mhs2.toString());
+        mahasiswaFilkom mhs3 = new mahasiswaFilkom("Esy Mira", "876543219", false, true, "215150701111034", 2.5);
+        System.out.println(mhs3.toString());
+        System.out.println("\n=========== DATA PEKERJA ===========");
+        pekerja pekerja1 = new pekerja("Iqbal Biondy", "351717969","195102439283", true, true, 7, 22);
+        System.out.println(pekerja1.toString());
+        pekerja pekerja2 = new pekerja("Zayn Malik", "678467251362","741637254724", true, false, 9, 29);
+        System.out.println(pekerja2.toString());
+        pekerja pekerja3 = new pekerja("Olivia Rodrigo", "13243545467","346798532424", false, false, 8, 17);
+        System.out.println(pekerja3.toString());
+        System.out.println("\n=========== DATA MANAJER ===========");
+        manajer manajer1 = new manajer("Lyra Hertin", "351707384392", "204837283728", false, false, 9, 20, 1500 );
+        System.out.println(manajer1.toString());
+        manajer manajer2 = new manajer("Chris Evans", "24323545667", "341643412347", true, true, 13, 29, 5688 );
+        System.out.println(manajer2.toString());
+        manajer manajer3 = new manajer("Taylor Swift", "4645756867990", "678464324567", false, false, 6, 12, 865 );
+        System.out.println(manajer3.toString());
+    }
+}
