@@ -1,0 +1,39 @@
+package carr;
+
+class Car {
+
+public String carType, policeNumber, merk;
+public boolean status;
+
+public Car(String carType, String policeNumber, String merk, boolean status) {
+this.carType = carType;
+this.policeNumber = policeNumber;
+this.merk = merk;
+this.status = status;
+}
+
+public String getCarType() {
+return carType;
+}
+
+public String getPoliceNumber() {
+return policeNumber;
+}
+
+public String getMerk() {
+return merk;
+}
+
+public boolean isStatus() {
+return status;
+}
+
+public static void setStatus(String status) {
+if (status == "true") {
+System.out.println("MOBIL BERHASIL DISEWA");
+} else {
+System.out.println("MAAF, MOBIL SUDAH DISEWA");
+
+}
+}
+}
