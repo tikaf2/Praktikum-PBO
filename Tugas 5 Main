@@ -1,0 +1,30 @@
+package carr;
+
+public class Carr {
+
+public static void main(String[] args) {
+CarRider ming = new CarRider("Lin Ming",19, "081234567891");
+CarRider yohan = new CarRider("Bei Yohan", 20, "081122223333");
+CarRider Kendall = new CarRider("Kendall", 25, "081362577115");
+
+CarData.addCar("SUV", "N 1111 AB","Honda");
+CarData.addCar("SPORT", "N 2222 AB", "SSCTuatara");
+CarData.addCar("TRUCK", "N 3333 AB","Suzuki");
+CarData.addCar("SEDAN", "N 4444 AB","Camry");
+
+CarData.listOfCar();
+
+RentArchive.Rent(ming,CarData.carList.get(0), 9);
+RentArchive.Rent(yohan,CarData.carList.get(1), 3);
+RentArchive.Rent(Kendall,CarData.carList.get(3), 4);
+
+System.out.println();
+Car.setStatus("true");
+Car.setStatus("true");
+Car.setStatus("false");
+Car.setStatus("true");
+
+System.out.println();
+RentArchive.info();
+}
+}
