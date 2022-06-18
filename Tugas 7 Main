@@ -1,0 +1,38 @@
+package com.company;
+public class Main{
+public static void main(String[] args) {
+Pegawai PegawaiTetap1 = new pegawaiTetap("Bayu", "350728490327424892342", 2000000);
+Pegawai PegawaiTetap2 = new pegawaiTetap("Zayn", "356234876246652752644", 7700000);
+Pegawai PegawaiTetap3 = new pegawaiTetap("Harry", "358987545211144484128", 6850000);
+Pegawai PegawaiTetap4 = new pegawaiTetap("Niall", "358789745412132185411", 5480000);
+Pegawai PegawaiTetap5 = new pegawaiTetap("Louis", "357897985132148745154", 4840000);
+Pegawai PegawaiHarian1 = new pegawaiHarian("Edo", "350728490327424892343", 8500, 40);
+Pegawai PegawaiHarian2 = new pegawaiHarian("Liam", "358787878745445445454", 7400, 41);
+Pegawai PegawaiHarian3 = new pegawaiHarian("Kendall", "354144884878788784544", 10000, 47);
+Pegawai PegawaiHarian4 = new pegawaiHarian("Hailey", "358787441132388774458", 8400, 36);
+Pegawai PegawaiHarian5 = new pegawaiHarian("Gigi", "357897978777471287427", 5400, 28);
+Pegawai Pegawai1 = new sales("Tika", "350728490327424892344", 50, 50000);
+Pegawai Pegawai2 = new sales("Danielle", "358787454415454447745", 46, 47000);
+Pegawai Pegawai3 = new sales("Cevans", "357989874412132478445", 70, 58000);
+Pegawai Pegawai4 = new sales("Hemsworth", "357897741231448947515", 47, 45000);
+Pegawai Pegawai5 = new sales("Lizzie", "359798741326963871235", 35, 35000);
+System.out.println("\t====== LIST PEGAWAI TETAP ======\t");
+System.out.println(PegawaiTetap1);
+System.out.println(PegawaiTetap2);
+System.out.println(PegawaiTetap3);
+System.out.println(PegawaiTetap4);
+System.out.println(PegawaiTetap5);
+System.out.println("\t====== LIST PEGAWAI HARIAN ======\t");
+System.out.println(PegawaiHarian1);
+System.out.println(PegawaiHarian2);
+System.out.println(PegawaiHarian3);
+System.out.println(PegawaiHarian4);
+System.out.println(PegawaiHarian5);
+System.out.println("\t====== LIST SALES ======\t");
+System.out.println(Pegawai1);
+System.out.println(Pegawai2);
+System.out.println(Pegawai3);
+System.out.println(Pegawai4);
+System.out.println(Pegawai5);
+}
+}
