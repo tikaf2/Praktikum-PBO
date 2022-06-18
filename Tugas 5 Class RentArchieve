@@ -1,0 +1,23 @@
+package carr;
+import java.util.ArrayList;
+
+class RentArchive {
+
+public static ArrayList<CarRent> rentData =new ArrayList<>();
+public static void Rent(CarRider rider, Carcar, int rentDuration) {
+rentData.add(new CarRent(rider, car,rentDuration));
+}
+
+static void info() {
+
+System.out.println("============================");
+System.out.println("INFORMASI PELANGGAN");
+
+System.out.println("============================");
+for (int i = 0; i < rentData.size(); i++){
+System.out.println("NAMA PEMINJAM\t:" + rentData.get(i).getRider().getName());
+System.out.println("TIPE MOBIL\t: " +rentData.get(i).getCar().getCarType());
+System.out.println("NO POLISI\t: " +rentData.get(i).getCar().getPoliceNumber());
+System.out.println("LAMA RENTAL\t: "+ rentData.get(i).getRentDuration());
+System.out.println("----------------------------");
+}
